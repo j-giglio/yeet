@@ -1,41 +1,57 @@
-/*OBJECTS*/
+/*ITEMS*/
 
-let items = {
-  oldHelmet: {
-    type: "helmet"
+
+let oldHelmet = {
+  name: "old helmet",
+  type: "helmet",
     
-  },
-  rustySword: {
-    type: "weapon"
-  },
+},
+
+let rustySword = {
+  name: "rusty sword",
+  type: "weapon",
+  
+},
+
+/*MONSTERS*/
+
+let demon = {
+  
 }
 
-let rooms = {
-  start: {
-    monsters: null,
-    availableItems: {
-      items.oldHelmet,
-      items.rustySword
-    },
-    north: rooms.second,
-    south: null,
-    east: null,
-    west: null,
+/*ROOMS*/
+let start = {
+  description: "You are in a room with a table in it. On the table is an old, beat up helmet and a rusty sword. A door leads to the north.",
+  monsters: null,
+  availableItems: {
+    oldHelmet,
+    rustySword,
   },
-  second: {
-    //figure out later
-  },
+  north: second,
+  south: null,
+  east: null,
+  west: null,
+  }
+  
+let second = {
+  description: "You are in a room with a table in it. On the table is an old, beat up helmet and a rusty sword. A door leads to the north.",
+  monsters: null,
+  availableItems: null
+  north: null,
+  south: start,
+  east: null,
+  west: null,
 }
+    
+/*THE PLAYER*/
 
 let player = {
   name: "Ryan",
   location: rooms.start,
   inventory: {},
-  stats: {
-    level: 1,
-    health: 50,
-    maxHealth: 50,
-    armor: 0,
-    evasion: 0
-  }
+  level: 1,
+  health: 50,
+  maxHealth: 50,
+  armor: 0,
+  evasion: 0
 }
