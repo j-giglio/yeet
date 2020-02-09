@@ -20,13 +20,14 @@ let demon = {
 }
 
 /*ROOMS*/
+
 let start = {
   description: "You are in a room with a table in it. On the table is an old, beat up helmet and a rusty sword. A door leads to the north.",
   monsters: null,
-  availableItems: {
+  availableItems: [
     oldHelmet,
     rustySword,
-  },
+  ],
   north: second,
   south: null,
   east: null,
@@ -36,7 +37,7 @@ let start = {
 let second = {
   description: "You are in a room with a table in it. On the table is an old, beat up helmet and a rusty sword. A door leads to the north.",
   monsters: null,
-  availableItems: null
+  availableItems: [null],
   north: null,
   south: start,
   east: null,
