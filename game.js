@@ -4,19 +4,19 @@
 let oldHelmet = {
   name: "old helmet",
   type: "helmet",
-    
+
 },
 
 let rustySword = {
   name: "rusty sword",
   type: "weapon",
-  
+
 },
 
 /*MONSTERS*/
 
 let demon = {
-  
+
 }
 
 /*ROOMS*/
@@ -33,7 +33,7 @@ let start = {
   east: null,
   west: null,
   }
-  
+
 let second = {
   description: "You are in a room with a table in it. On the table is an old, beat up helmet and a rusty sword. A door leads to the north.",
   monsters: null,
@@ -43,10 +43,10 @@ let second = {
   east: null,
   west: null,
 }
-    
+
 /*THE PLAYER*/
 
-let player = {
+let user = {
   name: "Ryan",
   location: rooms.start,
   inventory: {},
