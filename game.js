@@ -1,5 +1,6 @@
-/*ITEMS*/
+const readlineSync = require("readline-sync");
 
+/*ITEMS*/
 
 let oldHelmet = {
   name: "old helmet",
@@ -35,7 +36,7 @@ let start = {
   }
 
 let second = {
-  description: "You are in a room with a table in it. On the table is an old, beat up helmet and a rusty sword. A door leads to the north.",
+  description: "You are in the second room.",
   monsters: null,
   availableItems: [null],
   north: null,
@@ -55,4 +56,19 @@ let user = {
   maxHealth: 50,
   armor: 0,
   evasion: 0
+}
+
+/*FUNCTIONS*/
+
+function startgame() {
+  user.name = readlineSync.question("What is your name?")
+  parse()
+}
+
+function parse() {
+  let input = (readlineSync.question("")
+
+  switch (input) {
+    
+  }
 }
