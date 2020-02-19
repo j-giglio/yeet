@@ -68,7 +68,7 @@ function startgame() {
 function parse() {
   let input = (readlineSync.question("")
 
-  switch (input) {
-    
+  if (input.startsWith("go") || input.startsWith("move") || input.startsWith("walk") || input.startsWith("run)) {
+    if
   }
 }
