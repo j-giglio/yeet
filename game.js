@@ -65,7 +65,8 @@ let user = {
 function startGame() {
   do {
   user.name = readlineSync.question("What is your name?");
-} while(!user.name);
+  } while(!user.name);
+
   input();
 }
 
@@ -107,9 +108,9 @@ function input() {
     } else {
       console.log("Where are you going?");
     };
-  } /*else if () {
+  } else if () {
 
-  }*/
+  };
 };
 
 
