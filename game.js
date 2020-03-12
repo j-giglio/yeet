@@ -6,13 +6,13 @@ let oldHelmet = {
   name: "old helmet",
   type: "helmet",
 
-},
+};
 
 let rustySword = {
   name: "rusty sword",
   type: "weapon",
 
-},
+};
 
 /*MONSTERS*/
 
@@ -33,7 +33,7 @@ let start = {
   south: null,
   east: null,
   west: null,
-  }
+}
 
 let second = {
   description: "You are in the second room.",
@@ -65,55 +65,55 @@ let user = {
 function startGame() {
   do {
   user.name = readlineSync.question("What is your name?");
-  } while(!user.name)
-  parse();
+} while(!user.name);
+  input();
 }
 
-function parse() {
-  let input = (readlineSync.question("")
+function input() {
+  let input = readlineSync.question("");
 
   if (input.startsWith("go") || input.startsWith("move") || input.startsWith("walk") || input.startsWith("run") || input.startsWith("climb")) {
-    
+
     if (input.endsWith("north")) {
       user.location = (user.location.north) ? user.location.north;
       if (!user.location.north) {
         console.log("There is nothing to the north.");
-      }
+      };
     } else if (input.endsWith("south")) {
       user.location = (user.location.south) ? user.location.south;
       if (!user.location.south) {
         console.log("There is nothing to the south.");
-      }
+      };
     } else if (input.endsWith("east")) {
       user.location = (user.location.east) ? user.location.east;
       if (!user.location.east) {
         console.log("There is nothing to the east.");
-      }
+      };
     } else if (input.endsWith("west")) {
       user.location = (user.location.west) ? user.location.west;
       if (!user.location.west) {
         console.log("There is nothing to the west.");
-      }
+      };
     } else if (input.endsWith("up")) {
       user.location = (user.location.up) ? user.location.up;
       if (!user.location.up) {
         console.log("There is nothing upwards.");
-      }
+      };
     } else if (input.endsWith("down")) {
       user.location = (user.location.down) ? user.location.down;
       if (!user.location.down) {
         console.log("There is nothing downwards.");
-      }
+      };
     } else {
       console.log("Where are you going?");
-    }
-  } else if () {
-    
-  }
-}
+    };
+  } /*else if () {
+
+  }*/
+};
 
 
-      
-      
-      
+
+
+
 startGame();

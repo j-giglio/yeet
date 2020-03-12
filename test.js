@@ -2,7 +2,7 @@ let a = {
   b: 1,
   c: 2,
   d: 3,
-  e: get(z.y)
+  e: null, /*z.x*/
 }
 
 let z = {
@@ -12,6 +12,6 @@ let z = {
   v: a.d
 }
 
-a.d = 20;
+a.e = z.x;
 
-console.log(a.d + "   " + z.v + "   " + a.e)
+console.log(a.e)
